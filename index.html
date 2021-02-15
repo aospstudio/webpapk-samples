@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>aospstudio</title>
+    <meta name="description" content="Customize your Android experience with AOSP STUDIO smart mobile apps! AOSP STUDIO: For You, For Everyone.">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="aospstudio">
+    <meta name="theme-color" content="#000000" />
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="//cloud.aospstudiom.com/favicon/apple-icon-72x72.png">
+  </head>
+  <body>
+    <h1>Welcome PWA sample page</h1>
+    <script>
+      if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js')
+            .then((reg) => {
+              console.log('Service worker registered.', reg);
+            });
+      });
+    }
+    </script>
+  </body>
+</html>
