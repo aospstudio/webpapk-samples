@@ -1,21 +1,57 @@
 {
-  "name": "aospstudio",
+  "name": "AOSP STUDIO",
   "short_name": "aospstudio",
-  "description": "Customize your Android experience with AOSP STUDIO smart mobile apps! AOSP STUDIO: For You, For Everyone.",
-  "icons": [{
-      "src": "//cloud.aospstudiom.com/img/192.png",
+  "icons": [
+    {
+      "src": "//aospstudio.com/img/assets/192.png",
       "sizes": "192x192",
-      "type": "image/png"
-    }, {
-      "src": "//cloud.aospstudiom.com/img/512.png",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "//aospstudio.com/assets/img/512.png",
       "sizes": "512x512",
-      "type": "image/png"
-    }],
-  "start_url": "/",
-  "scope": "/",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "https://aospstudio.com/",
+  "scope": "https://aospstudio.com/",
+  "background_color": "#ffffff",
+  "display_override": [
+    "window-control-overlay",
+    "minimal-ui"
+  ],
   "display": "standalone",
+  "theme_color": "#ffffff",
   "lang": "en",
   "dir": "ltr",
-  "background_color": "#000000",
-  "theme_color": "#000000"
+  "description": "Customize your Android experience with AOSP STUDIO smart mobile apps! AOSP STUDIO: For You, For Everyone.",
+  "screenshots": [
+    {
+      "src": "//aospstudio.com/assets/img/screenshot1.jpg",
+      "type": "image/png",
+      "sizes": "1080x2400"
+    },
+    {
+      "src": "//aospstudio.com/assets/img/screenshot2.jpg",
+      "type": "image/jpg",
+      "sizes": "1080x2400"
+    },
+    {
+      "src": "//aospstudio.com/assets/img/screenshot3.jpg",
+      "type": "image/png",
+      "sizes": "1080x2400"
+    },
+    {
+      "src": "//aospstudio.com/assets/img/screenshot4.jpg",
+      "type": "image/png",
+      "sizes": "1080x2400"
+    },
+    {
+      "src": "//aospstudio.com/assets/img/screenshot5.jpg",
+      "type": "image/png",
+      "sizes": "1080x2400"
+    }
+  ]
 }

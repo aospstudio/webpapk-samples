@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+<head>
     <meta charset="utf-8">
-    <title>aospstudio</title>
-    <meta name="description" content="Customize your Android experience with AOSP STUDIO smart mobile apps! AOSP STUDIO: For You, For Everyone.">
+    <title>AOSP STUDIO</title>
+    <meta name="description" content="Customize your Android experience with AOSP STUDIO apps on your phones, tablets and TVs! AOSP STUDIO: For You, For Everyone">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
     <meta name="apple-mobile-web-app-title" content="aospstudio">
-    <meta name="theme-color" content="#000000" />
+    <meta name="theme-color" content="#ffffff"/>
     <link rel="manifest" href="/manifest.json">
-    <link rel="apple-touch-icon" href="//cloud.aospstudiom.com/favicon/apple-icon-72x72.png">
-  </head>
-  <body>
-    <h1>Welcome PWA sample page</h1>
-    <script>
-      if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/service-worker.js')
-            .then((reg) => {
-              console.log('Service worker registered.', reg);
-            });
-      });
+    <link rel="icon" sizes="192x192" href="//aospstudio.com/assets/favicon/android-icon-192x192.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="//aospstudio.com/assets/favicon/apple-icon-72x72.png">
+</head>
+<body>
+<h1>Welcome PWA sample page</h1>
+<script src="/pwacompat.min.js"></script>
+<script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/pwa-application.js');
+        });
     }
-    </script>
-  </body>
+</script>
+</body>
 </html>
